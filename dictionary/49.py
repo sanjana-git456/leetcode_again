@@ -1,5 +1,4 @@
 x = input("Enter: ").split()
-result = []
 d = {}
 for i in range(len(x)):
     a = ''.join(sorted(x[i]))
