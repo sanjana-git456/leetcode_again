@@ -3,9 +3,9 @@ t = int(input("Enter target: "))
 def twosum(x,t):
     left = 0
     right = len(x) - 1
-    for i in range(len(x)):
+    while left < right:
         if x[left] + x[right] == t:
-            return left,right
+            return left+1,right+1
         elif x[left] + x[right] < t:
             left += 1
         else:
